@@ -9,21 +9,42 @@
 /* Begin PBXBuildFile section */
 		F6387C4C29B238310091668A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C4B29B238310091668A /* AppDelegate.swift */; };
 		F6387C4E29B238310091668A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C4D29B238310091668A /* SceneDelegate.swift */; };
-		F6387C5029B238310091668A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C4F29B238310091668A /* ViewController.swift */; };
-		F6387C5329B238310091668A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6387C5129B238310091668A /* Main.storyboard */; };
 		F6387C5529B238330091668A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6387C5429B238330091668A /* Assets.xcassets */; };
 		F6387C5829B238330091668A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6387C5629B238330091668A /* LaunchScreen.storyboard */; };
+		F6387C6029B2399D0091668A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C5F29B2399D0091668A /* MainViewController.swift */; };
+		F6387C6329B23AEA0091668A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6387C6229B23AEA0091668A /* SnapKit */; };
+		F6387C6629B23AFE0091668A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F6387C6529B23AFE0091668A /* RxCocoa */; };
+		F6387C6829B23AFE0091668A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F6387C6729B23AFE0091668A /* RxRelay */; };
+		F6387C6A29B23AFE0091668A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6387C6929B23AFE0091668A /* RxSwift */; };
+		F6387C6D29B23B120091668A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6387C6C29B23B120091668A /* Then */; };
+		F6387C7329B23B520091668A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C7229B23B520091668A /* MainView.swift */; };
+		F6387C7529B23B5D0091668A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C7429B23B5D0091668A /* MainViewModel.swift */; };
+		F6387C7B29B23C3D0091668A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C7A29B23C3D0091668A /* CustomImageView.swift */; };
+		F6387C7D29B2401B0091668A /* LoadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C7C29B2401B0091668A /* LoadButton.swift */; };
+		F6387C7F29B251080091668A /* UIImageView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C7E29B251080091668A /* UIImageView+Ex.swift */; };
+		F6387C8229B253740091668A /* ImageCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6387C8129B253740091668A /* ImageCase.swift */; };
+		F6D7E7A229B25AF100BEB85E /* ImageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7E7A129B25AF100BEB85E /* ImageStatus.swift */; };
+		F6D7E7A629B2698500BEB85E /* ButtonStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7E7A529B2698500BEB85E /* ButtonStatus.swift */; };
+		F6D7E7A829B26EA800BEB85E /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7E7A729B26EA800BEB85E /* ImageURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6387C4829B238310091668A /* iOS Onboarding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Onboarding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6387C4B29B238310091668A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6387C4D29B238310091668A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6387C4F29B238310091668A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6387C5229B238310091668A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6387C5429B238330091668A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6387C5729B238330091668A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6387C5929B238330091668A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6387C5F29B2399D0091668A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F6387C7229B23B520091668A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F6387C7429B23B5D0091668A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F6387C7A29B23C3D0091668A /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F6387C7C29B2401B0091668A /* LoadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadButton.swift; sourceTree = "<group>"; };
+		F6387C7E29B251080091668A /* UIImageView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ex.swift"; sourceTree = "<group>"; };
+		F6387C8129B253740091668A /* ImageCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCase.swift; sourceTree = "<group>"; };
+		F6D7E7A129B25AF100BEB85E /* ImageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStatus.swift; sourceTree = "<group>"; };
+		F6D7E7A529B2698500BEB85E /* ButtonStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStatus.swift; sourceTree = "<group>"; };
+		F6D7E7A729B26EA800BEB85E /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6387C6D29B23B120091668A /* Then in Frameworks */,
+				F6387C6829B23AFE0091668A /* RxRelay in Frameworks */,
+				F6387C6629B23AFE0091668A /* RxCocoa in Frameworks */,
+				F6387C6A29B23AFE0091668A /* RxSwift in Frameworks */,
+				F6387C6329B23AEA0091668A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +82,79 @@
 		F6387C4A29B238310091668A /* iOS Onboarding Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				F6387C4B29B238310091668A /* AppDelegate.swift */,
-				F6387C4D29B238310091668A /* SceneDelegate.swift */,
-				F6387C4F29B238310091668A /* ViewController.swift */,
-				F6387C5129B238310091668A /* Main.storyboard */,
+				F6387C6E29B23B2C0091668A /* Application */,
+				F6387C8029B253610091668A /* Constant */,
+				F6387C7629B23BA20091668A /* Extension */,
+				F6387C7929B23C1F0091668A /* CustomView */,
+				F6387C6F29B23B350091668A /* Main */,
 				F6387C5429B238330091668A /* Assets.xcassets */,
 				F6387C5629B238330091668A /* LaunchScreen.storyboard */,
 				F6387C5929B238330091668A /* Info.plist */,
 			);
 			path = "iOS Onboarding Challenge";
+			sourceTree = "<group>";
+		};
+		F6387C6E29B23B2C0091668A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C4B29B238310091668A /* AppDelegate.swift */,
+				F6387C4D29B238310091668A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F6387C6F29B23B350091668A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C7129B23B3C0091668A /* ViewModel */,
+				F6387C7029B23B380091668A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F6387C7029B23B380091668A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C5F29B2399D0091668A /* MainViewController.swift */,
+				F6387C7229B23B520091668A /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6387C7129B23B3C0091668A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C7429B23B5D0091668A /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6387C7629B23BA20091668A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C7E29B251080091668A /* UIImageView+Ex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F6387C7929B23C1F0091668A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C7A29B23C3D0091668A /* CustomImageView.swift */,
+				F6387C7C29B2401B0091668A /* LoadButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F6387C8029B253610091668A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F6387C8129B253740091668A /* ImageCase.swift */,
+				F6D7E7A129B25AF100BEB85E /* ImageStatus.swift */,
+				F6D7E7A529B2698500BEB85E /* ButtonStatus.swift */,
+				F6D7E7A729B26EA800BEB85E /* ImageURL.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +173,13 @@
 			dependencies = (
 			);
 			name = "iOS Onboarding Challenge";
+			packageProductDependencies = (
+				F6387C6229B23AEA0091668A /* SnapKit */,
+				F6387C6529B23AFE0091668A /* RxCocoa */,
+				F6387C6729B23AFE0091668A /* RxRelay */,
+				F6387C6929B23AFE0091668A /* RxSwift */,
+				F6387C6C29B23B120091668A /* Then */,
+			);
 			productName = "iOS Onboarding Challenge";
 			productReference = F6387C4829B238310091668A /* iOS Onboarding Challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +208,11 @@
 				Base,
 			);
 			mainGroup = F6387C3F29B238310091668A;
+			packageReferences = (
+				F6387C6129B23AEA0091668A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F6387C6429B23AFE0091668A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F6387C6B29B23B120091668A /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = F6387C4929B238310091668A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +229,6 @@
 			files = (
 				F6387C5829B238330091668A /* LaunchScreen.storyboard in Resources */,
 				F6387C5529B238330091668A /* Assets.xcassets in Resources */,
-				F6387C5329B238310091668A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +239,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6387C5029B238310091668A /* ViewController.swift in Sources */,
+				F6387C7529B23B5D0091668A /* MainViewModel.swift in Sources */,
+				F6387C7B29B23C3D0091668A /* CustomImageView.swift in Sources */,
+				F6387C7D29B2401B0091668A /* LoadButton.swift in Sources */,
+				F6D7E7A829B26EA800BEB85E /* ImageURL.swift in Sources */,
+				F6D7E7A229B25AF100BEB85E /* ImageStatus.swift in Sources */,
+				F6387C7F29B251080091668A /* UIImageView+Ex.swift in Sources */,
+				F6387C6029B2399D0091668A /* MainViewController.swift in Sources */,
+				F6387C7329B23B520091668A /* MainView.swift in Sources */,
 				F6387C4C29B238310091668A /* AppDelegate.swift in Sources */,
+				F6387C8229B253740091668A /* ImageCase.swift in Sources */,
+				F6D7E7A629B2698500BEB85E /* ButtonStatus.swift in Sources */,
 				F6387C4E29B238310091668A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +257,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6387C5129B238310091668A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6387C5229B238310091668A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6387C5629B238330091668A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +394,6 @@
 				INFOPLIST_FILE = "iOS Onboarding Challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +421,6 @@
 				INFOPLIST_FILE = "iOS Onboarding Challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +458,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6387C6129B23AEA0091668A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F6387C6429B23AFE0091668A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		F6387C6B29B23B120091668A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6387C6229B23AEA0091668A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6387C6129B23AEA0091668A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F6387C6529B23AFE0091668A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6387C6429B23AFE0091668A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F6387C6729B23AFE0091668A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6387C6429B23AFE0091668A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F6387C6929B23AFE0091668A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6387C6429B23AFE0091668A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F6387C6C29B23B120091668A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6387C6B29B23B120091668A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6387C4029B238310091668A /* Project object */;
 }
