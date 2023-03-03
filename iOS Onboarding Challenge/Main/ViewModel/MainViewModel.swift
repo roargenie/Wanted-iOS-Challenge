@@ -17,7 +17,6 @@ final class MainViewModel {
     private let fourthLoadImageURL = BehaviorRelay<Bool>(value: false)
     private let fifthLoadImageURL = BehaviorRelay<Bool>(value: false)
     private let allLoadImageURL = BehaviorRelay<Bool>(value: false)
-//    private let loadButtonRelay = PublishRelay<UrlImageCase>()
     
     struct Input {
         let firstLoadButtonTap: Signal<Void>
@@ -25,7 +24,7 @@ final class MainViewModel {
         let thirdLoadButtonTap: Signal<Void>
         let fourthLoadButtonTap: Signal<Void>
         let fifthLoadButtonTap: Signal<Void>
-        let allLoadButtonTap: Signal<Void>
+        let allLoadButtonTap: Observable<Void>
     }
     
     struct Output {
@@ -35,7 +34,6 @@ final class MainViewModel {
         let fourthLoadImageURL: Driver<Bool>
         let fifthLoadImageURL: Driver<Bool>
         let allLoadImageURL: Driver<Bool>
-//        let loadButtonRelay: Signal<UrlImageCase>
     }
     var disposeBag = DisposeBag()
     
@@ -47,56 +45,61 @@ final class MainViewModel {
                 vm.firstLoadImageURL.accept(!vm.firstLoadImageURL.value)
             }
             .disposed(by: disposeBag)
-        
+
         input.secondLoadButtonTap
             .withUnretained(self)
             .emit { vm, value in
                 vm.secondLoadImageURL.accept(!vm.secondLoadImageURL.value)
             }
             .disposed(by: disposeBag)
-        
+
         input.thirdLoadButtonTap
             .withUnretained(self)
             .emit { vm, value in
                 vm.thirdLoadImageURL.accept(!vm.thirdLoadImageURL.value)
             }
             .disposed(by: disposeBag)
-        
+
         input.fourthLoadButtonTap
             .withUnretained(self)
             .emit { vm, value in
                 vm.fourthLoadImageURL.accept(!vm.fourthLoadImageURL.value)
             }
             .disposed(by: disposeBag)
-        
+
         input.fifthLoadButtonTap
             .withUnretained(self)
             .emit { vm, value in
                 vm.fifthLoadImageURL.accept(!vm.fifthLoadImageURL.value)
             }
             .disposed(by: disposeBag)
-        
+
         input.allLoadButtonTap
-            .scan(false) { lastState, newState in !lastState }
+            .withLatestFrom(allLoadImageURL)
             .withUnretained(self)
-            .emit { vm, value in
-                vm.allLoadImageURL.accept(value)
-                vm.firstLoadImageURL.accept(value)
-                vm.secondLoadImageURL.accept(value)
-                vm.thirdLoadImageURL.accept(value)
-                vm.fourthLoadImageURL.accept(value)
-                vm.fifthLoadImageURL.accept(value)
+            .bind { vm, value in
+                vm.allLoadImageURL.accept(!value)
+                vm.firstLoadImageURL.accept(!value)
+                vm.secondLoadImageURL.accept(!value)
+                vm.thirdLoadImageURL.accept(!value)
+                vm.fourthLoadImageURL.accept(!value)
+                vm.fifthLoadImageURL.accept(!value)
             }
             .disposed(by: disposeBag)
         
-//        Observable.combineLatest(
-//            input.firstLoadButtonTap,
-//            input.secondLoadButtonTap,
-//            input.thirdLoadButtonTap,
-//            input.fourthLoadButtonTap,
-//            input.fifthLoadButtonTap
-//        )
-        
+//        Observable.zip(
+//            firstLoadImageURL,
+//            secondLoadImageURL,
+//            thirdLoadImageURL,
+//            fourthLoadImageURL,
+//            fifthLoadImageURL)
+//        .map { $0 && $1 && $2 && $3 && $4 }
+//        .withUnretained(self)
+//        .bind { vm, value in
+//            print(value)
+//            vm.allLoadImageURL.accept(value)
+//        }
+//        .disposed(by: disposeBag)
         
         return Output(
             firstLoadImageURL: firstLoadImageURL.asDriver(onErrorJustReturn: false),

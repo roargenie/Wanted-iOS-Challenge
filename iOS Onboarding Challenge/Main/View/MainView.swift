@@ -98,31 +98,31 @@ class MainView: UIView {
         firstLoadButton.snp.makeConstraints { make in
             make.centerY.equalTo(firstImageView.snp.centerY)
             make.trailing.equalToSuperview().inset(12)
-            make.width.equalTo(60)
+            make.width.equalTo(64)
             make.height.equalTo(40)
         }
         secondLoadButton.snp.makeConstraints { make in
             make.centerY.equalTo(secondImageView.snp.centerY)
             make.trailing.equalToSuperview().inset(12)
-            make.width.equalTo(60)
+            make.width.equalTo(64)
             make.height.equalTo(40)
         }
         thirdLoadButton.snp.makeConstraints { make in
             make.centerY.equalTo(thirdImageView.snp.centerY)
             make.trailing.equalToSuperview().inset(12)
-            make.width.equalTo(60)
+            make.width.equalTo(64)
             make.height.equalTo(40)
         }
         fourthLoadButton.snp.makeConstraints { make in
             make.centerY.equalTo(fourthImageView.snp.centerY)
             make.trailing.equalToSuperview().inset(12)
-            make.width.equalTo(60)
+            make.width.equalTo(64)
             make.height.equalTo(40)
         }
         fifthLoadButton.snp.makeConstraints { make in
             make.centerY.equalTo(fifthImageView.snp.centerY)
             make.trailing.equalToSuperview().inset(12)
-            make.width.equalTo(60)
+            make.width.equalTo(64)
             make.height.equalTo(40)
         }
         allLoadButton.snp.makeConstraints { make in

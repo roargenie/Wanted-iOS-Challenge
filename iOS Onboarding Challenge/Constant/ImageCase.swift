@@ -10,9 +10,9 @@ import UIKit
 enum UrlImageCase: Int, CaseIterable {
     
     case firstButton = 0, secondButton,
-         thirdButton, fourthButton, fifthButton
+         thirdButton, fourthButton, fifthButton, allLoad
     
-    var url: URL {
+    var url: URL? {
         switch self {
         case .firstButton:
             return URL(string: ImageURL.firstImage)!
@@ -24,6 +24,8 @@ enum UrlImageCase: Int, CaseIterable {
             return URL(string: ImageURL.fourthImage)!
         case .fifthButton:
             return URL(string: ImageURL.fifthImage)!
+        case .allLoad:
+            return nil
         }
     }
     

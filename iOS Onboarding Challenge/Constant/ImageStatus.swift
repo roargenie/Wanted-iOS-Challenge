@@ -16,7 +16,7 @@ enum ImageStatus {
     var image: Any {
         switch self {
         case .load(let imageCase, let imageView):
-            return loadImage(url: imageCase.url, imageView: imageView)
+            return loadImage(url: imageCase.url!, imageView: imageView)
         case .unload:
             return UIImage(systemName: "photo")!
         }

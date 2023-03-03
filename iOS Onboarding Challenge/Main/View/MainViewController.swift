@@ -50,7 +50,7 @@ class MainViewController: UIViewController {
             thirdLoadButtonTap: mainView.thirdLoadButton.rx.tap.asSignal(),
             fourthLoadButtonTap: mainView.fourthLoadButton.rx.tap.asSignal(),
             fifthLoadButtonTap: mainView.fifthLoadButton.rx.tap.asSignal(),
-            allLoadButtonTap: mainView.allLoadButton.rx.tap.asSignal())
+            allLoadButtonTap: mainView.allLoadButton.rx.tap.asObservable())
         let output = viewModel.transform(input: input)
         
         output.firstLoadImageURL
@@ -85,36 +85,6 @@ class MainViewController: UIViewController {
                    mainView.fifthImageView.rx.loaded)
             .disposed(by: disposeBag)
         
-        
-//        output.loadButtonRelay
-//            .map { $0 == .firstButton }
-//            .emit(to: mainView.firstLoadButton.rx.isSelected,
-//                  mainView.firstImageView.rx.loaded)
-//            .disposed(by: disposeBag)
-//
-//        output.loadButtonRelay
-//            .map { $0 == .secondButton }
-//            .emit(to: mainView.secondLoadButton.rx.isSelected,
-//                  mainView.secondImageView.rx.loaded)
-//            .disposed(by: disposeBag)
-//
-//        output.loadButtonRelay
-//            .map { $0 == .thirdButton }
-//            .emit(to: mainView.thirdLoadButton.rx.isSelected,
-//                  mainView.thirdImageView.rx.loaded)
-//            .disposed(by: disposeBag)
-//
-//        output.loadButtonRelay
-//            .map { $0 == .fourthButton }
-//            .emit(to: mainView.fourthLoadButton.rx.isSelected,
-//                  mainView.fourthImageView.rx.loaded)
-//            .disposed(by: disposeBag)
-//
-//        output.loadButtonRelay
-//            .map { $0 == .fifthButton }
-//            .emit(to: mainView.fifthLoadButton.rx.isSelected,
-//                  mainView.fifthImageView.rx.loaded)
-//            .disposed(by: disposeBag)
         
         
     }
